@@ -4,136 +4,106 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>homwor7</title>
     <link rel="stylesheet" href="css/normalize.css" />
-
     <link rel="stylesheet" href="css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&family=Pinyon+Script&display=swap"
-      rel="stylesheet"
-      link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&display=swap"
-      rel="stylesheet"
-      link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&family=Roboto+Slab:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <title>Modul7</title>
   </head>
   <body>
-    <div class="wrapper">
-      <header class="main-header">
-        <nav class="main-nav">
-          <h1 class="logo">
-            <a href="" class="site-logo">Golden</a>
-          </h1>
-          <ul class="main-menu">
-            <li class="main-menu-item">
-              <a href="" class="main-menu-link">Home</a>
-            </li>
-            <li class="main-menu-item">
-              <a href="" class="main-menu-link">Service</a>
-            </li>
-            <li class="main-menu-item">
-              <a href="" class="main-menu-link">Portfolio</a>
-            </li>
-            <li class="main-menu-item">
-              <a href="" class="main-menu-link">About</a>
-            </li>
-            <li class="main-menu-item">
-              <a href="" class="main-menu-link"> Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <main class="main-content">
-        <h2 class="titel-services">Services</h2>
-        <p class="sub-title">Proin iaculis purus consequat sem cure</p>
-        <ul class="list-services">
-          <li class="li-services-1">
-            <div class="curd-wrapper">
-              <span class="curd"></span>
-              <span class="curd-buttom-1"></span>
-            </div>
-
-            <h3>E-Commerce</h3>
-            <p>
+    <!--navigation and page-logo-->
+    <header class="page-header">
+      <nav class="page-nav container">
+        <a href="#" class="site-logo">
+          <img
+            src="images/Logo-Treehouse.png"
+            alt="site logo"
+            width="78 px"
+            height="28 px"
+          />
+        </a>
+        <!--navigation-->
+        <ul class="site-navigation">
+          <li><a href="#">home</a></li>
+          <li><a href="#">services</a></li>
+          <li><a href="#">portfolio</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- my main -->
+    <!-- service-list-start -->
+    <main>
+      <section class="service container">
+        <h2 class="services-title">Services</h2>
+        <p class="title2">Proin iaculis purus consequat sem cure.</p>
+        <ul class="service-list">
+          <li class="service-icon basket">
+            <h3 class="list-title">E-comerse</h3>
+            <p class="list-text">
               Proin iaculis purus consequat sem cure digni ssim. Donec
               porttitora entum suscipit aenean rhoncus posuere odio in
               tincidunt.
             </p>
           </li>
-          <li class="li-services-2">
-            <div class="curd-wrapper">
-              <span class="curd"></span>
-              <span class="curd-buttom-2"></span>
-            </div>
-            <h3>Responsive Web</h3>
-            <p>
+          <li class="service-icon laptop">
+            <h3 class="list-title">Responsive Web</h3>
+            <p class="list-text">
               Proin iaculis purus consequat sem cure digni ssim. Donec
               porttitora entum suscipit aenean rhoncus posuere odio in
               tincidunt.
             </p>
           </li>
-          <li class="li-services-3">
-            <div class="curd-wrapper">
-              <span class="curd"></span>
-              <span class="curd-buttom-3"></span>
-            </div>
-            <h3>Web Security</h3>
-            <p>
+          <li class="service-icon dd">
+            <h3 class="list-title">Web Securit</h3>
+            <p class="list-text">
               Proin iaculis purus consequat sem cure digni ssim. Donec
               porttitora entum suscipit aenean rhoncus posuere odio in
               tincidunt.
             </p>
           </li>
         </ul>
-      </main>
-      <footer>
-        <div class="banner-container">
-          <h2>Contact us</h2>
-          <p>Proin iaculis purus consequat sem cure.</p>
-          <img
-            src="images/Map Image.png"
-            class="mape"
-            alt=""
-            width="614"
-            height="537"
-          />
-          <form class="singup-form" methed="get" action="#">
-            <div class="div">
-              <ul class="personal-data">
-                <li>
-                  <input
-                    type="text"
-                    placeholder="Your Name *"
-                    autofocus
-                    required
-                  />
-                </li>
-                <li>
-                  <input
-                    type="email"
-                    placeholder="Your E-mail *"
-                    name="user_email"
-                    required
-                  />
-                </li>
-                <li>
-                  <input type="text" placeholder="Subject" />
-                </li>
-              </ul>
-              <textarea
-                name="discription"
-                placeholder="Your Message*"
-                cols="30"
-                rows="10"
-              ></textarea>
-            </div>
-            <button>Send Message</button>
-          </form>
-        </div>
-      </footer>
-    </div>
+      </section>
+      <!-- service-list-end -->
+      <!-- contact section start-->
+      <section class="contact">
+        <h2 class="contact-title1">Contact Us</h2>
+        <p class="contact-title2">
+          Proin iaculis purus consequat sem cure.
+        </p>
+        <form class="contact-form container" method="GET" action="#">
+          <div>
+            <input
+              class="input-list validation"
+              type="text"
+              name="user-name"
+              placeholder="your name *"
+              required
+            />
+            <input
+              class="input-list validation"
+              type="email"
+              name="user-mail"
+              placeholder="your e-mail *"
+              required
+            />
+            <input
+              class="input-list"
+              type="text"
+              name="subject"
+              placeholder="subject"
+            />
+            <textarea
+              class="input-textarea validation"
+              name="user-message"
+              placeholder="your message *"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+          </div>
+          <button class="form-button">Send message</button>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
