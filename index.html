@@ -12,13 +12,14 @@
     <!--navigation and page-logo-->
     <header class="page-header">
       <nav class="page-nav container">
-        <a href="#" class="site-logo">
-          <img
+        <a href="#" class="site-logo"
+          >Golden
+          <!-- <img
             src="images/Logo-Treehouse.png"
             alt="site logo"
             width="78 px"
             height="28 px"
-          />
+          /> -->
         </a>
         <!--navigation-->
         <ul class="site-navigation">
@@ -33,7 +34,7 @@
     <!-- my main -->
     <!-- service-list-start -->
     <main>
-      <section class="service container">
+      <section class="section service container">
         <h2 class="services-title">Services</h2>
         <p class="title2">Proin iaculis purus consequat sem cure.</p>
         <ul class="service-list">
@@ -65,41 +66,45 @@
       </section>
       <!-- service-list-end -->
       <!-- contact section start-->
-      <section class="contact">
+      <section class="section contact">
         <h2 class="contact-title1">Contact Us</h2>
         <p class="contact-title2">
           Proin iaculis purus consequat sem cure.
         </p>
         <form class="contact-form container" method="GET" action="#">
           <div>
-            <input
-              class="input-list validation"
-              type="text"
-              name="user-name"
-              placeholder="your name *"
-              required
-            />
-            <input
-              class="input-list validation"
-              type="email"
-              name="user-mail"
-              placeholder="your e-mail *"
-              required
-            />
-            <input
-              class="input-list"
-              type="text"
-              name="subject"
-              placeholder="subject"
-            />
-            <textarea
-              class="input-textarea validation"
-              name="user-message"
-              placeholder="your message *"
-              cols="30"
-              rows="10"
-              required
-            ></textarea>
+            <div class="input">
+              <input
+                class="input-list validation"
+                type="text"
+                name="user-name"
+                placeholder="your name *"
+                required
+              />
+              <input
+                class="input-list validation"
+                type="email"
+                name="user-mail"
+                placeholder="your e-mail *"
+                required
+              />
+              <input
+                class="input-list"
+                type="text"
+                name="subject"
+                placeholder="subject"
+              />
+            </div>
+            <div>
+              <textarea
+                class="input-textarea validation"
+                name="user-message"
+                placeholder="your message *"
+                cols="30"
+                rows="10"
+                required
+              ></textarea>
+            </div>
           </div>
           <button class="form-button">Send message</button>
         </form>

@@ -15,8 +15,10 @@ html {
   font-style: normal;
   font-weight: 400;
   src: local("Roboto Slab Regular"), local("RobotoSlab-Regular"),
-    url("../fonts/roboto-slab-v9-cyrillic-regular.woff2") format("woff2"),
-    url("../fonts/roboto-slab-v9-cyrillic-regular.woff") format("woff");
+    url("../font-face/roboto-slab-v12-latin_cyrillic-regular.woff2")
+      format("woff2"),
+    url("../font-face/roboto-slab-v12-latin_cyrillic-regular.woff")
+      format("woff");
 }
 /* great vibes-fonts */
 @font-face {
@@ -24,8 +26,8 @@ html {
   font-style: normal;
   font-weight: 400;
   src: local("Great Vibes"), local("GreatVibes-Regular"),
-    url("../fonts/great-vibes-v7-latin-regular.woff2") format("woff2"),
-    url("../fonts/great-vibes-v7-latin-regular.woff") format("woff");
+    url("../font-face/great-vibes-v7-latin-regular.woff") format("woff2"),
+    url("../font-face/great-vibes-v7-latin-regular.woff2") format("woff");
 }
 /* montserrat-fonts */
 @font-face {
@@ -33,16 +35,16 @@ html {
   font-style: normal;
   font-weight: 400;
   src: local("Montserrat Regular"), local("Montserrat-Regular"),
-    url("../fonts/montserrat-v14-cyrillic-regular.woff2") format("woff2"),
-    url("../fonts/montserrat-v14-cyrillic-regular.woff") format("woff");
+    url("../font-face/montserrat-v14-cyrillic-regular.woff2") format("woff2"),
+    url("../font-face/montserrat-v14-cyrillic-regular.woff") format("woff");
 }
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   src: local("Montserrat Bold"), local("Montserrat-Bold"),
-    url("../fonts/montserrat-v14-cyrillic-700.woff2") format("woff2"),
-    url("../fonts/montserrat-v14-cyrillic-700.woff") format("woff");
+    url("../font-face/montserrat-v14-cyrillic-700.woff2") format("woff2"),
+    url("../font-face/montserrat-v14-cyrillic-700.woff") format("woff");
 }
 /* goudy-fonts */
 @font-face {
@@ -50,8 +52,10 @@ html {
   font-style: normal;
   font-weight: 400;
   src: local("Goudy Bookletter 1911"), local("GoudyBookletter1911"),
-    url("../fonts/goudy-bookletter-1911-v9-latin-regular.woff2") format("woff2"),
-    url("../fonts/goudy-bookletter-1911-v9-latin-regular.woff") format("woff");
+    url("../font-face/goudy-bookletter-1911-v9-latin-regular.woff2")
+      format("woff2"),
+    url("../font-face/goudy-bookletter-1911-v9-latin-regular.woff")
+      format("woff");
 }
 body {
   color: #777777;
@@ -69,13 +73,15 @@ img {
 }
 /* my header start */
 .page-header {
-  margin-top: 55px;
+  padding-top: 55px;
 }
 .site-logo {
   font-family: "Great Vibes";
   display: flex;
   margin: 0;
   text-decoration: none;
+  font-size: 26px;
+  color: #fed136;
 }
 .page-nav {
   display: flex;
@@ -86,6 +92,7 @@ img {
 .site-navigation {
   display: flex;
   margin: 0;
+  padding: 0;
   list-style: none;
   justify-content: space-between;
   width: 490px;
@@ -108,6 +115,10 @@ img {
 }
 /* my header end */
 /* service start */
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .service {
   margin-top: 124px;
 }
@@ -188,7 +199,6 @@ img {
   font-weight: 400;
   font-family: "Roboto Slab";
   margin-top: 12px;
-  padding-bottom: 120px;
   padding-right: 10px;
   text-align: center;
 }
@@ -197,7 +207,7 @@ img {
   background-color: #222222;
   padding-top: 110px;
   height: 676px;
-  background-image: url(../images/Map\Image.png);
+  background-image: url(../images/Map.png);
   background-repeat: no-repeat;
   background-position: right bottom;
   width: 100%;
@@ -223,19 +233,24 @@ img {
   font-family: "Goudy Bookletter 1911", "Arial", sans-serif;
   margin-bottom: 75px;
 }
+
 .contact-form div {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   height: 210px;
   margin-bottom: 30px;
 }
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
 .input-list {
-  margin-bottom: 30px;
   width: 455px;
   height: 50px;
   border: 1px solid #cccccc;
   border-radius: 2px;
-  margin-left: 30px;
   padding-left: 20px;
   font-size: 14px;
   font-weight: 700;
@@ -256,6 +271,7 @@ img {
   outline: 3px solid red;
 }
 .input-textarea {
+  display: flex;
   width: 455px;
   height: 210px;
   border: 1px solid #cccccc;
@@ -265,8 +281,8 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Montserrat", "Arial", sans-serif;
-  margin-top: -25.5%;
-  margin-left: 55%;
+  /* margin-top: -25.5%;
+  margin-left: 55%; */
 }
 .input-textarea::placeholder {
   color: #bbbbbb;
